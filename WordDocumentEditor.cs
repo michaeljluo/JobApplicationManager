@@ -7,7 +7,7 @@ public class WordDocumentEditor
     public static void EditResume(string role, string[] keywords, string company)
     {
         // Create a folder for the company if it doesn't exist
-        string companyFolder = Path.Combine(Directory.GetCurrentDirectory(), company);
+        string companyFolder = Path.Combine("C:/Users/mjl82/Desktop/RESUME APPS/CUSTOMIZED/", company);
         Directory.CreateDirectory(companyFolder);
 
         // Define the file paths for the edited resume and cover letter
@@ -65,7 +65,7 @@ public class WordDocumentEditor
     {
 
         // Create a folder for the company if it doesn't exist
-        string companyFolder = Path.Combine(Directory.GetCurrentDirectory(), company);
+        string companyFolder = Path.Combine("C:/Users/mjl82/Desktop/RESUME APPS/CUSTOMIZED/", company);
         Directory.CreateDirectory(companyFolder);
 
         // Define the file paths for the edited resume and cover letter
