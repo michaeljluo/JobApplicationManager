@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "avU3w6N/1rOAFwfJqYZdReo7AjOgTH+oeG19mtWOnR1BgxH9ONNcuCB75mEDplDY5yv0RNb4a36WrdNeXBDiAw==",
+  "dgSpecHash": "la8YAPYZpXeSJ1IxrQQr3VaVRxzKtlYvZ/RQ6Duk1VvqAcGtAsWfwubsBxIGyhWeB7uYq7/56htBO9sjn4W9yw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mjl82\\Projects\\JobApplicationManager\\JobApplicationManager.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\mjl82\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\mjl82\\.nuget\\packages\\microsoft.io.recyclablememorystream\\2.2.1\\microsoft.io.recyclablememorystream.2.2.1.nupkg.sha512",
     "C:\\Users\\mjl82\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\mjl82\\.nuget\\packages\\pdfsharp\\1.50.5147\\pdfsharp.1.50.5147.nupkg.sha512",
     "C:\\Users\\mjl82\\.nuget\\packages\\pdfsharpcore\\1.3.60\\pdfsharpcore.1.3.60.nupkg.sha512",
     "C:\\Users\\mjl82\\.nuget\\packages\\sharpziplib\\1.3.3\\sharpziplib.1.3.3.nupkg.sha512",
     "C:\\Users\\mjl82\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta17\\sixlabors.fonts.1.0.0-beta17.nupkg.sha512",
@@ -30,5 +31,16 @@
     "C:\\Users\\mjl82\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\mjl82\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PDFsharp 1.50.5147' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PDFsharp",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

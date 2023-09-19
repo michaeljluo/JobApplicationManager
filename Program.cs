@@ -28,18 +28,17 @@ namespace JobApplicationManager
                 Console.Write("Enter keywords (separate with commas): ");
                 string keywordsInput = Console.ReadLine();
 
-                // Split the input into individ ual keywords, trim extra spaces
+                // Split the input into individual keywords, trim extra spaces
                 string[] keywords = keywordsInput.Split(',')
                     .Select(keyword => keyword.Trim())
                     .ToArray();
 
 
-                // TO-DO: allow for empty value
                 Console.Write("Enter special comments: ");
                 string comments = Console.ReadLine();
 
                 // Edit the resume and cover letters using the provided data
-                WordDocumentEditor.EditResume(role, keywords);
+                WordDocumentEditor.EditResume(role, keywords, company);
                 WordDocumentEditor.EditCoverLetter(role, jobTitle, company);
 
                 // Now, you can continue with Excel and PDF operations and folder management as needed.

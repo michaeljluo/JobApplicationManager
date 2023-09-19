@@ -1,11 +1,19 @@
-using System;
 using Xceed.Words.NET;
+
 
 public class WordDocumentEditor
 {
     
-    public static void EditResume(string role, string[] keywords)
+    public static void EditResume(string role, string[] keywords, string company)
     {
+        // Create a folder for the company if it doesn't exist
+        string companyFolder = Path.Combine(Directory.GetCurrentDirectory(), company);
+        Directory.CreateDirectory(companyFolder);
+
+        // Define the file paths for the edited resume and cover letter
+        string editedResumePath = Path.Combine(companyFolder, "edited_resume.docx");
+
+
         // Load the modified resume template with placeholders for all 14 skills
         using (DocX document = DocX.Load("word templates/resume_template.docx"))
         {
@@ -48,12 +56,21 @@ public class WordDocumentEditor
             document.ReplaceText("[Role]", role);
 
             // Save the edited resume
-            document.SaveAs("edited_resume.docx");
+            document.SaveAs(editedResumePath);
+
         }
     }
 
     public static void EditCoverLetter(string role, string jobTitle, string company)
     {
+
+        // Create a folder for the company if it doesn't exist
+        string companyFolder = Path.Combine(Directory.GetCurrentDirectory(), company);
+        Directory.CreateDirectory(companyFolder);
+
+        // Define the file paths for the edited resume and cover letter
+        string editedResumePath = Path.Combine(companyFolder, "edited_cover_letter.docx");
+
         // Load the cover letter template
         using (DocX document = DocX.Load("word templates/cover_letter_template.docx"))
         {
@@ -64,7 +81,9 @@ public class WordDocumentEditor
 
             
             // Save the edited cover letter
-            document.SaveAs("edited_cover_letter.docx");
+            document.SaveAs(editedResumePath);
         }
     }
+
+
 }

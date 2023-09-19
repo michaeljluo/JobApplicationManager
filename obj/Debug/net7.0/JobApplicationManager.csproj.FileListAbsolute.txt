@@ -40,3 +40,7 @@ C:\Users\mjl82\Projects\JobApplicationManager\obj\Debug\net7.0\refint\JobApplica
 C:\Users\mjl82\Projects\JobApplicationManager\obj\Debug\net7.0\JobApplicationManager.pdb
 C:\Users\mjl82\Projects\JobApplicationManager\obj\Debug\net7.0\JobApplicationManager.genruntimeconfig.cache
 C:\Users\mjl82\Projects\JobApplicationManager\obj\Debug\net7.0\ref\JobApplicationManager.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\PdfSharp.Charting.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\PdfSharp.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\de\PdfSharp.Charting.resources.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\de\PdfSharp.resources.dll
