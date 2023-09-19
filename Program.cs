@@ -13,14 +13,25 @@ namespace JobApplicationManager
                 Console.Write("Enter the job title (enter 'q' to quit): ");
                 string jobTitle = Console.ReadLine();
 
+
                 if (jobTitle.ToLower() == "q")
                 {
                     Console.WriteLine("Thank you for using Job Application Manager!");
                     break;
                 }
 
+                if(jobTitle == ""){
+                    jobTitle = "Software Engineer";
+                    Console.WriteLine("Job title defaulted to Software Engineer!");
+                }
+
                 Console.Write("Enter your declared role (often same as job title): ");
                 string role = Console.ReadLine();
+
+                if(role == ""){
+                    role = "Software Engineer";
+                    Console.WriteLine("Role defaulted to Software Engineer!");
+                }
 
                 Console.Write("Enter the company: ");
                 string company = Console.ReadLine();
@@ -46,6 +57,8 @@ namespace JobApplicationManager
                 string comments = Console.ReadLine();
 
                 ExcelManager.AddJobApplication(jobTitle, company, comments);
+
+                Console.WriteLine("Successfully added job to spreadsheet!");
 
                 // Optionally, you can loop to process more job applications or exit.
             }

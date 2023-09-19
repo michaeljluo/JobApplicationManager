@@ -7,7 +7,7 @@ public class ExcelManager
     public static void AddJobApplication(string jobTitle, string company, string comments)
     {
 
-        string dateSubmitted = DateTime.Now.ToString("yyyy-MM-dd");
+        string dateSubmitted = DateTime.Now.ToString("dddd MMMM d, yyyy");
 
 
         // Open the Excel file for writing
