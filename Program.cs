@@ -33,10 +33,6 @@ namespace JobApplicationManager
                     .Select(keyword => keyword.Trim())
                     .ToArray();
 
-
-                Console.Write("Enter special comments: ");
-                string comments = Console.ReadLine();
-
                 // Edit the resume and cover letters using the provided data
                 WordDocumentEditor.EditResume(role, keywords, company);
                 WordDocumentEditor.EditCoverLetter(role, jobTitle, company);
@@ -44,6 +40,12 @@ namespace JobApplicationManager
                 // Now, you can continue with Excel and PDF operations and folder management as needed.
                 // For now, let's just print a message indicating success.
                 Console.WriteLine("Resume and cover letter have been edited and saved.");
+
+                // our priority is to get the resume and cover letter and then add any comments to excel
+                Console.Write("Enter special comments: ");
+                string comments = Console.ReadLine();
+
+                ExcelManager.AddJobApplication(jobTitle, company, comments);
 
                 // Optionally, you can loop to process more job applications or exit.
             }

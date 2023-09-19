@@ -44,7 +44,7 @@
             },
             "EPPlus": {
               "target": "Package",
-              "version": "[6.2.9, )"
+              "version": "[5.0.4, )"
             },
             "PdfSharp": {
               "target": "Package",

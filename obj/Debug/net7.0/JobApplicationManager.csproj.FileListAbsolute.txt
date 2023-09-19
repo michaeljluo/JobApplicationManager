@@ -6,8 +6,6 @@ C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\JobApplicationMan
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Xceed.Document.NET5.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Xceed.Words.NET5.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\EPPlus.dll
-C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\EPPlus.Interfaces.dll
-C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\EPPlus.System.Drawing.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.Extensions.Configuration.FileExtensions.dll
@@ -16,7 +14,6 @@ C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.Extensi
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
-C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\PdfSharpCore.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\ICSharpCode.SharpZipLib.dll
@@ -26,9 +23,6 @@ C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\System.Drawing.Co
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\System.IO.Packaging.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\de\PdfSharpCore.resources.dll
-C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\mjl82\Projects\JobApplicationManager\obj\Debug\net7.0\JobApplicationManager.csproj.AssemblyReference.cache
 C:\Users\mjl82\Projects\JobApplicationManager\obj\Debug\net7.0\JobApplicationManager.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mjl82\Projects\JobApplicationManager\obj\Debug\net7.0\JobApplicationManager.AssemblyInfoInputs.cache
@@ -44,3 +38,8 @@ C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\PdfSharp.Charting
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\PdfSharp.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\de\PdfSharp.Charting.resources.dll
 C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\de\PdfSharp.resources.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\mjl82\Projects\JobApplicationManager\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
