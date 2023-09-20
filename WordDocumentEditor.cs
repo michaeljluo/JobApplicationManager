@@ -11,7 +11,8 @@ public class WordDocumentEditor
         Directory.CreateDirectory(companyFolder);
 
         // Define the file paths for the edited resume and cover letter
-        string editedResumePath = Path.Combine(companyFolder, "edited_resume.docx");
+        string editedResumePath = Path.Combine(companyFolder, "Michael J Luo Resume.docx");
+        
 
 
         // Load the modified resume template with placeholders for all 14 skills
@@ -69,7 +70,7 @@ public class WordDocumentEditor
         Directory.CreateDirectory(companyFolder);
 
         // Define the file paths for the edited resume and cover letter
-        string editedResumePath = Path.Combine(companyFolder, "edited_cover_letter.docx");
+        string editedResumePath = Path.Combine(companyFolder, "Michael J Luo Cover Letter.docx");
 
         // Load the cover letter template
         using (DocX document = DocX.Load("word templates/cover_letter_template.docx"))
