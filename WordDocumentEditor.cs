@@ -4,14 +4,19 @@ using Xceed.Words.NET;
 public class WordDocumentEditor
 {
     
-    public static void EditResume(string role, string[] keywords, string company)
+    public static void EditResume(string jobTitle, string role, string[] keywords, string company)
     {
         // Create a folder for the company if it doesn't exist
         string companyFolder = Path.Combine("C:/Users/mjl82/Desktop/RESUME APPS/CUSTOMIZED/", company);
         Directory.CreateDirectory(companyFolder);
 
         // Define the file paths for the edited resume and cover letter
-        string editedResumePath = Path.Combine(companyFolder, "Michael J Luo Resume.docx");
+        string jobFolder = Path.Combine(companyFolder, jobTitle);
+        Directory.CreateDirectory(jobFolder);
+
+        string editedResumePath = Path.Combine(companyFolder, jobTitle);
+        editedResumePath = Path.Combine(editedResumePath, "Michael J Luo Resume.docx");
+
         
 
 
@@ -32,29 +37,28 @@ public class WordDocumentEditor
             // Add default values for the remaining skills to maintain a total of 14 skills.
             string[] defaultSkills = new string[]
             {
-                "Leadership & Team Management",
-                "Web Development & Back-End Development",
-                "Integrating Distributed Systems & Rest APIs",
-                "Developing User-Facing Front-End Websites",
-                "Scaling Applications & Managing High-User Loads",
-                "Agile Project Management & Agile Frameworks",
+                "Back-End Services & Full-Stack Web Development",
+                "Integrating RESTful APIs & Object-Oriented Classes",
                 "Software Development & Issue Troubleshooting",
-                "SQL Database Design & Query Formation",
-                "Leading Developments from Concept to Completion",
-                "Software Development Lifecycle (SDLC)",
                 "Excellent Verbal & Written Communication",
-                "Overhauling Front-End Applications",
-                "Data Structures & Efficient Design",
-                "Technical Education & Problem Solving"
+                "Scaling Applications & Managing High-User Loads",
+                "Continuous Integration & Deployment Pipelines (CICD)",
+                "Cloud Computing Deployment, Analytics, & Storage",
+
+                
+                "Managing Agile Sprints, Code Reviews, & Kanban Boards",
+                "Building High-Quality Products through Unit Testing & SDLC",
+                "Designing Front-End Web Applications with HTML & CSS",
+                "SQL Database Management, Design, & Query Formation",
+                "High-Level Problem Solving & Efficient Software Design",
+                "Leading Iterative Developments from Idea to Completion",
+                "Collaboration to Resolve Issues Quickly and Efficiently",
             };
 
             for (int i = 0; i < 14 - keywords.Length; i++)
             {
                 document.ReplaceText("[Keyword" + (i + keywords.Length +  1) + "]", defaultSkills[i]);
             }
-
-            // Replace other placeholders as needed (e.g., [JobTitle], [Comments])
-            document.ReplaceText("[Role]", role);
 
             // Save the edited resume
             document.SaveAs(editedResumePath);
@@ -70,7 +74,11 @@ public class WordDocumentEditor
         Directory.CreateDirectory(companyFolder);
 
         // Define the file paths for the edited resume and cover letter
-        string editedResumePath = Path.Combine(companyFolder, "Michael J Luo Cover Letter.docx");
+        string jobFolder = Path.Combine(companyFolder, jobTitle);
+        Directory.CreateDirectory(jobFolder);
+
+        string editedResumePath = Path.Combine(companyFolder, jobTitle);
+        editedResumePath = Path.Combine(editedResumePath, "Michael J Luo Cover Letter.docx");
 
         // Load the cover letter template
         using (DocX document = DocX.Load("word templates/cover_letter_template.docx"))

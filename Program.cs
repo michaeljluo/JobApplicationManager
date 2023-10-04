@@ -45,7 +45,7 @@ namespace JobApplicationManager
                     .ToArray();
 
                 // Edit the resume and cover letters using the provided data
-                WordDocumentEditor.EditResume(role, keywords, company);
+                WordDocumentEditor.EditResume(jobTitle, role, keywords, company);
                 WordDocumentEditor.EditCoverLetter(role, jobTitle, company);
 
                 // Now, you can continue with Excel and PDF operations and folder management as needed.
