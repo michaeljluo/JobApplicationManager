@@ -36,6 +36,10 @@ namespace JobApplicationManager
                 Console.Write("Enter the company: ");
                 string company = Console.ReadLine();
 
+                if (Directory.Exists(Path.Combine("C:/Users/mjl82/Desktop/RESUME APPS/CUSTOMIZED/", company))){
+                    Console.Write("Company already applied to BTW!\n");
+                }
+
                 Console.Write("Enter keywords (separate with commas): ");
                 string keywordsInput = Console.ReadLine();
 
