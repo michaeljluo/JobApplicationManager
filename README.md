@@ -1,7 +1,7 @@
 ﻿# JobApplicationManager
 
 ## Description
-This program is a command-line job application management tool that enables users to efficiently catalog, customize, and track their job applications. It automates the creation of custom resumes and cover letters, stores application files in organized folders, and maintains a detailed history of job applications in an Excel spreadsheet.
+This program is a command-line job application management tool that enables users to efficiently catalog, customize, and track their job applications. It allows for streamlined customization of resumes and cover letters, stores application files in organized folders, and maintains a detailed history of job applications in an Excel spreadsheet.
  
 ## Features
 
@@ -16,7 +16,7 @@ This program is a command-line job application management tool that enables user
 ### Manage Job Application Files
 - Organize and store job application files, including resumes and cover letters.
 - Store files in folders named after the respective companies.
-- 
+
 ### Handle Multiple Job Applications
 - Support the ability to process and manage multiple job applications in a single session.
 
