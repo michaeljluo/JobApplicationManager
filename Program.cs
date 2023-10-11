@@ -26,15 +26,15 @@ namespace JobApplicationManager
                 }
                 if(jobTitle == "1"){
                     jobTitle = "Associate Software Engineer";
-                    Console.WriteLine("Job title defaulted to Software Engineer!");
+                    Console.WriteLine("Job title defaulted to Associate Software Engineer!");
                 }
 
                 Console.Write("Enter your declared role (often same as job title): ");
                 string role = Console.ReadLine();
 
                 if(role == ""){
-                    role = "Software Engineer";
-                    Console.WriteLine("Role defaulted to Software Engineer!");
+                    role = "Full Stack Software Engineer";
+                    Console.WriteLine("Role defaulted to Full Stack Software Engineer!");
                 }
 
                 Console.Write("Enter the company: ");

@@ -60,6 +60,10 @@ public class WordDocumentEditor
                 document.ReplaceText("[Keyword" + (i + keywords.Length +  1) + "]", defaultSkills[i]);
             }
 
+            document.ReplaceText("[Role]", role);
+            document.ReplaceText("[JobTitle]", jobTitle);
+
+            
             // Save the edited resume
             document.SaveAs(editedResumePath);
 
