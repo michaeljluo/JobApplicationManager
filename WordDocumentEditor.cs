@@ -15,7 +15,7 @@ public class WordDocumentEditor
         Directory.CreateDirectory(jobFolder);
 
         string editedResumePath = Path.Combine(companyFolder, jobTitle);
-        editedResumePath = Path.Combine(editedResumePath, "Michael J Luo Resume.docx");
+        editedResumePath = Path.Combine(editedResumePath, "Michael_Luo_resume.docx");
 
         
 
@@ -37,31 +37,29 @@ public class WordDocumentEditor
             // Add default values for the remaining skills to maintain a total of 14 skills.
             string[] defaultSkills = new string[]
             {
-                "Back-End Services & Full-Stack Web Development",
-                "Integrating RESTful APIs & Object-Oriented Classes",
-                "Software Development & Issue Troubleshooting",
-                "Excellent Verbal & Written Communication",
-                "Scaling Applications & Managing High-User Loads",
-                "Continuous Integration & Deployment Pipelines (CICD)",
-                "Cloud Computing Deployment, Analytics, & Storage",
+                "Full-Stack Web Development",
+                "Microservices & RESTful APIs",
+                "Object Oriented Programming with Java",
+                "Front-end Development with HTML & CSS ",
+                "Problem Solving & Issue Troubleshooting",
+                "Excellent Communication and Leadership",
 
+                "Agile Sprints and Code Reviews",
+                "Driving Projects from Idea to Completion",
+                "Database Integration and Data ETL",
+                "Deployment with Kubernetes",
+                "Event Driven Architecture with Kafka",
+                "Data Structures & Efficient Design"
                 
-                "Managing Agile Sprints, Code Reviews, & Kanban Boards",
-                "Building High-Quality Products through Unit Testing & SDLC",
-                "Designing Front-End Web Applications with HTML & CSS",
-                "SQL Database Management, Design, & Query Formation",
-                "High-Level Problem Solving & Efficient Software Design",
-                "Leading Iterative Developments from Idea to Completion",
-                "Collaboration to Resolve Issues Quickly and Efficiently",
             };
 
-            for (int i = 0; i < 14 - keywords.Length; i++)
+            for (int i = 0; i < 12 - keywords.Length; i++)
             {
                 document.ReplaceText("[Keyword" + (i + keywords.Length +  1) + "]", defaultSkills[i]);
             }
 
             document.ReplaceText("[Role]", role);
-            document.ReplaceText("[JobTitle]", jobTitle);
+            // document.ReplaceText("[JobTitle]", jobTitle);
 
             
             // Save the edited resume

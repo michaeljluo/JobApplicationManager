@@ -33,9 +33,14 @@ namespace JobApplicationManager
                 string role = Console.ReadLine();
 
                 if(role == ""){
-                    role = "Full Stack Software Engineer";
-                    Console.WriteLine("Role defaulted to Full Stack Software Engineer!");
+                    role = jobTitle;
+                    Console.WriteLine("Role defaulted to " + jobTitle);
                 }
+                if(role == "1"){
+                    role = "Software Engineer";
+                    Console.WriteLine("Role defaulted to Software Engineer");
+                }
+
 
                 Console.Write("Enter the company: ");
                 string company = Console.ReadLine();
@@ -54,11 +59,11 @@ namespace JobApplicationManager
 
                 // Edit the resume and cover letters using the provided data
                 WordDocumentEditor.EditResume(jobTitle, role, keywords, company);
-                WordDocumentEditor.EditCoverLetter(role, jobTitle, company);
+                // WordDocumentEditor.EditCoverLetter(role, jobTitle, company);
 
                 // Now, you can continue with Excel and PDF operations and folder management as needed.
                 // For now, let's just print a message indicating success.
-                Console.WriteLine("Resume and cover letter have been edited and saved.");
+                Console.WriteLine("Resume has been edited and saved.");
 
                 // our priority is to get the resume and cover letter and then add any comments to excel
                 Console.Write("Enter special comments: ");
