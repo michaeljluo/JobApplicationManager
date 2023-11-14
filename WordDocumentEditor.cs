@@ -4,7 +4,7 @@ using Xceed.Words.NET;
 public class WordDocumentEditor
 {
     
-    public static void EditResume(string jobTitle, string role, string[] keywords, string company)
+    public static void EditResume(string jobTitle, string[] keywords, string company)
     {
         // Create a folder for the company if it doesn't exist
         string companyFolder = Path.Combine("C:/Users/mjl82/Desktop/RESUME APPS/CUSTOMIZED/", company);
@@ -58,7 +58,7 @@ public class WordDocumentEditor
                 document.ReplaceText("[Keyword" + (i + keywords.Length +  1) + "]", defaultSkills[i]);
             }
 
-            document.ReplaceText("[Role]", role);
+            // document.ReplaceText("[Role]", role);
             // document.ReplaceText("[JobTitle]", jobTitle);
 
             

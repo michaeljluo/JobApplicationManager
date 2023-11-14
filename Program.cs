@@ -29,17 +29,17 @@ namespace JobApplicationManager
                     Console.WriteLine("Job title defaulted to Associate Software Engineer!");
                 }
 
-                Console.Write("Enter your declared role (often same as job title): ");
-                string role = Console.ReadLine();
+                // Console.Write("Enter your declared role (often same as job title): ");
+                // string role = Console.ReadLine();
 
-                if(role == ""){
-                    role = jobTitle;
-                    Console.WriteLine("Role defaulted to " + jobTitle);
-                }
-                if(role == "1"){
-                    role = "Software Engineer";
-                    Console.WriteLine("Role defaulted to Software Engineer");
-                }
+                // if(role == ""){
+                //     role = jobTitle;
+                //     Console.WriteLine("Role defaulted to " + jobTitle);
+                // }
+                // if(role == "1"){
+                //     role = "Software Engineer";
+                //     Console.WriteLine("Role defaulted to Software Engineer");
+                // }
 
 
                 Console.Write("Enter the company: ");
@@ -49,21 +49,26 @@ namespace JobApplicationManager
                     Console.Write("Company already applied to BTW!\n");
                 }
 
-                Console.Write("Enter keywords (separate with commas): ");
-                string keywordsInput = Console.ReadLine();
+                Console.Write("Do you want to customize keywords? (Enter 1 for yes)");
+                string customize = Console.ReadLine();
+                if(customize == "1"){
+                    Console.Write("Enter keywords (separate with commas): ");
+                    string keywordsInput = Console.ReadLine();
 
-                // Split the input into individual keywords, trim extra spaces
-                string[] keywords = keywordsInput.Split(',')
-                    .Select(keyword => keyword.Trim())
-                    .ToArray();
+                    // Split the input into individual keywords, trim extra spaces
+                    string[] keywords = keywordsInput.Split(',')
+                        .Select(keyword => keyword.Trim())
+                        .ToArray();
 
-                // Edit the resume and cover letters using the provided data
-                WordDocumentEditor.EditResume(jobTitle, role, keywords, company);
-                // WordDocumentEditor.EditCoverLetter(role, jobTitle, company);
+                    // Edit the resume and cover letters using the provided data
+                    WordDocumentEditor.EditResume(jobTitle, keywords, company);
+                    // WordDocumentEditor.EditCoverLetter(role, jobTitle, company);
 
-                // Now, you can continue with Excel and PDF operations and folder management as needed.
-                // For now, let's just print a message indicating success.
-                Console.WriteLine("Resume has been edited and saved.");
+                    // Now, you can continue with Excel and PDF operations and folder management as needed.
+                    // For now, let's just print a message indicating success.
+                    Console.WriteLine("Resume has been edited and saved.");
+                }
+
 
                 // our priority is to get the resume and cover letter and then add any comments to excel
                 Console.Write("Enter special comments: ");
